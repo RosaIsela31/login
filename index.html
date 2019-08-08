@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TOGETHER-CLICK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FORMULARIO, BOTONES -->
+  <section id="nav-bar">
+
+  </section>
+
+  <section class="page1_mobile row">
+     <div class="election_page1_mobile col-11"> 
+       <div id="transparent">
+          <br>
+          <img src="imgs/novios.jpg" alt="" id="img_novios"> <br>
+  
+         <br>
+         <h1>El espacio incluyente donde toda la comunidad de bodas se conecta.</h1><br><br>
+         
+         <button class="btn_initials trigger-login">INICIAR SESIÓN</button> <br> <br>
+         <pre>___________ O bien ___________ </pre> <br>
+         <button class="btn_initials trigger">REGÍSTRATE</button><br><br>
+       </div>
+       
+       <!-- MODAL REGISTRO NUEVO USUARIO -->
+      <div class= "modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <form id = "form-register" name = "formRegister" class = "centrar" action="">
+            <p> Regístrate. Crea tu cuenta</p><br><br>
+            <label for="name">nombre usuario: </label>
+            <input 
+                type ="text" 
+                name = "name" 
+                required
+            />
+            <label for="email">correo electrónico: </label>
+            <input 
+                type = "email" 
+                name = "email" 
+                id = "email" 
+                required
+            />
+            <label> contraseña</label> 
+            <input 
+                type ="password" 
+                name ="password" 
+                required 
+            />
+            <input 
+                type = "submit" 
+                value = "Registrarme"
+            />
+          </form>
+        </div> 
+      </div> <!-- termina MODAL REGISTRO NUEVO USUARIO -->
+
+
+      <!-- INICIA MODAL PARA INICIAR SESIÓN -->
+      <div class = "modal2">
+        <div class="modal-content">
+          <span class="close-button2">&times;</span>
+          <form id = "form-login" name = "formLogin" class = "centrar" action="">
+            <p> Inicia Sesión</p><br><br>
+            <label for="email">correo electrónico: </label>
+            <input 
+                type = "email" 
+                name = "email" 
+                id = "email2" 
+                required
+            />
+            <label> contraseña</label> 
+            <input 
+                type ="password" 
+                name ="password" 
+                required 
+            />
+            <input 
+                type = "submit" 
+                value = "iniciar-sesion"
+            />
+          </form>
+        </div> 
+      </div>
+      <!-- TERMINA MODAL PARA INICIAR SESIÓN -->
+
+     </div>
+  </section>
+  
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>   
+  <script type="module" src="app.js"></script>
+  <!-- <script type="module" src="main.js"></script> -->
+</body>
+</html>
